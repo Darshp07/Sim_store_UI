@@ -65,11 +65,6 @@ function Login() {
                     "staffId",
                     staff_id
                 );
-
-                localStorage.setItem(
-                    "storeId",
-                    store_id
-                );
                 debugger;           
                 // localStorage.setItem(
                 //     "user",

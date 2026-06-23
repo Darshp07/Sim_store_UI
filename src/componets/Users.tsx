@@ -120,8 +120,8 @@ function Users() {
                         className="table table-hover table-bordered align-middle text-center"
                         style={{
                             backgroundColor: "#fff",
-                            borderRadius: "15px",
-                            overflow: "hidden",
+                            borderRadius: "4px",
+                            overflow: "auto",
                             minWidth: "100%"
                         }}
                     >
@@ -156,10 +156,7 @@ function Users() {
                                         <td>{user.simNo}</td>
                                         <td>{user.accountNumber}</td>
                                         <td>{user.mobileNumber}</td>
-
-                                        <td>
-                                            {user.created_by}
-                                        </td>
+                                        <td>{user.created_by.username}</td>
                                     </tr>
                                 ))
                             ) : (

@@ -14,7 +14,7 @@ function AddSim() {
     const [mobileNumber, setMobileNumber] = useState("");
 
     const staffId = localStorage.getItem("staffId") ?? "";
-    const storeId = localStorage.getItem("storeId") ?? "";
+  
     // const user = JSON.parse(
     //     localStorage.getItem("user") || "{}"
     // );
@@ -23,8 +23,7 @@ function AddSim() {
         simNo: simNo,
         accountNumber: accountNumber,
         mobileNumber: mobileNumber,
-        staffId: staffId,
-        storeId: storeId
+        staffId: staffId
     };
     async function saveSim() {
         
@@ -56,9 +55,6 @@ function AddSim() {
             } else {
                 toast.error(response.data.message);
             }
-
-            toast.success("SIM Added Successfully");
-
 
         } catch (error) {
             toast.error("Unable To Save SIM");

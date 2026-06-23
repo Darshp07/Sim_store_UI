@@ -23,7 +23,7 @@ export interface saveSimRequest {
     accountNumber: string;
     mobileNumber: string;
     staffId: string;
-    storeId: string;
+ 
 }
 
 
